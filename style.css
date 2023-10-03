@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+body {
+  --gold: #b88940;
+  --yellow: #ffbd59;
+  --catamaran: "Catamaran", sans-serif;
+  --ruda: "Ruda", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 1em;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  color: var(--gold);
+  font-family: var(--ruda);
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.header-accent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: var(--catamaran);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.header-accent::before {
+  content: "";
+  background: black;
+  height: 5px;
+  width: 30%;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.header-subtitle {
+  font-family: var(--ruda);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.header-text {
+  font-family: var(--catamaran);
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+section {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  justify-content: center;
+}
+.section-line {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  z-index: -1;
+}
+.section-line > * {
+  height: 1.5em;
+  width: 100%;
+  background: var(--yellow);
+}
+.section-imagen {
+  width: 100%;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5em;
+}
+figure > * {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+figure > div:nth-child(1)::after {
+  content: "Lorem $2.00";
+  width: 100%;
+  height: 5px;
+  margin-top: 1em;
+  font-family: var(--catamaran);
+  font-weight: bold;
+}
+figure > div:nth-child(2)::after {
+  content: "Lorem $3.00";
+  width: 100%;
+  height: 5px;
+  margin-top: 1em;
+  font-family: var(--catamaran);
+  font-weight: bold;
+}
+figure > div:nth-child(3)::after {
+  content: "Lorem $4.00";
+  width: 100%;
+  height: 5px;
+  margin-top: 1em;
+  font-family: var(--catamaran);
+  font-weight: bold;
+}
+img {
+  width: 100%;
+}
+footer {
+  text-align: center;
+}
+.footer-title {
+  font-family: var(--open-sans);
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+}
+.footer-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: var(--catamaran);
+}
